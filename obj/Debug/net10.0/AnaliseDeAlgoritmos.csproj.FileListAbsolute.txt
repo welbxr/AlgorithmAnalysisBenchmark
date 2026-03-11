@@ -1,0 +1,15 @@
+C:\Users\LuizS\Desktop\Exercicios\Faculdade\AnaliseDeAlgoritmos\bin\Debug\net10.0\AnaliseDeAlgoritmos.exe
+C:\Users\LuizS\Desktop\Exercicios\Faculdade\AnaliseDeAlgoritmos\bin\Debug\net10.0\AnaliseDeAlgoritmos.deps.json
+C:\Users\LuizS\Desktop\Exercicios\Faculdade\AnaliseDeAlgoritmos\bin\Debug\net10.0\AnaliseDeAlgoritmos.runtimeconfig.json
+C:\Users\LuizS\Desktop\Exercicios\Faculdade\AnaliseDeAlgoritmos\bin\Debug\net10.0\AnaliseDeAlgoritmos.dll
+C:\Users\LuizS\Desktop\Exercicios\Faculdade\AnaliseDeAlgoritmos\bin\Debug\net10.0\AnaliseDeAlgoritmos.pdb
+C:\Users\LuizS\Desktop\Exercicios\Faculdade\AnaliseDeAlgoritmos\obj\Debug\net10.0\AnaliseDeAlgoritmos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LuizS\Desktop\Exercicios\Faculdade\AnaliseDeAlgoritmos\obj\Debug\net10.0\AnaliseDeAlgoritmos.AssemblyInfoInputs.cache
+C:\Users\LuizS\Desktop\Exercicios\Faculdade\AnaliseDeAlgoritmos\obj\Debug\net10.0\AnaliseDeAlgoritmos.AssemblyInfo.cs
+C:\Users\LuizS\Desktop\Exercicios\Faculdade\AnaliseDeAlgoritmos\obj\Debug\net10.0\AnaliseDeAlgoritmos.csproj.CoreCompileInputs.cache
+C:\Users\LuizS\Desktop\Exercicios\Faculdade\AnaliseDeAlgoritmos\obj\Debug\net10.0\AnaliseDeAlgoritmos.sourcelink.json
+C:\Users\LuizS\Desktop\Exercicios\Faculdade\AnaliseDeAlgoritmos\obj\Debug\net10.0\AnaliseDeAlgoritmos.dll
+C:\Users\LuizS\Desktop\Exercicios\Faculdade\AnaliseDeAlgoritmos\obj\Debug\net10.0\refint\AnaliseDeAlgoritmos.dll
+C:\Users\LuizS\Desktop\Exercicios\Faculdade\AnaliseDeAlgoritmos\obj\Debug\net10.0\AnaliseDeAlgoritmos.pdb
+C:\Users\LuizS\Desktop\Exercicios\Faculdade\AnaliseDeAlgoritmos\obj\Debug\net10.0\AnaliseDeAlgoritmos.genruntimeconfig.cache
+C:\Users\LuizS\Desktop\Exercicios\Faculdade\AnaliseDeAlgoritmos\obj\Debug\net10.0\ref\AnaliseDeAlgoritmos.dll
