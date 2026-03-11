@@ -1,0 +1,63 @@
+# Build results
+bin/
+obj/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# Test results
+TestResults/
+
+# Coverage reports
+coverage/
+*.coverage
+*.coveragexml
+
+# Publish output
+publish/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Dotnet tools
+.dotnet/
+
+# Environment variables
+.env
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Backup files
+*.bak
+
+# Generated files
+Generated/
+
+# Rider cache
+.idea/.idea.*
