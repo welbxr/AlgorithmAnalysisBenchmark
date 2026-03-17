@@ -1,8 +1,9 @@
 # Análise de Complexidade Computacional – Fatorial e Fibonacci em C# e Java
 
-## PROJETO POR:
-    ### LUIZ SANTANA DE ARAUJO - N047HF6
-    ### WELBER WILLIAM DA SILVA - F352951
+## Desenvolvido por:
+    --> Luiz Santana de Araujo - N047HF6
+    --> Welber Willian da Silva - F352951
+    
 ## Descrição do Projeto
 
 Este projeto implementa algoritmos para cálculo de **fatorial** e da **sequência de Fibonacci** em C#, com o objetivo de analisar aspectos básicos de **complexidade computacional**.
