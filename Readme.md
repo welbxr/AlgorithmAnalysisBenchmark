@@ -1,8 +1,8 @@
 # Análise de Complexidade Computacional – Fatorial e Fibonacci em C# e Java
 
 ## Desenvolvido por:
-    Luiz Santana de Araujo - N047HF6
-    Welber Willian da Silva - F352951
+    Luiz Santana de Araujo
+    Welber Willian da Silva
     
 ## Descrição do Projeto
 
