@@ -65,9 +65,3 @@ The project compares four strategies, showing how design decisions affect **scal
 ### Prerequisites
 *   **Java Development Kit (JDK) 11 or newer.**
 *   **Environment:** At least 2 GB of free RAM for high-load tests (especially for engine F3).
-
-### Installation and Execution
-1. Compile the modules:
-   ```bash
-   javac Main.java
-   FactorialMaster.java
