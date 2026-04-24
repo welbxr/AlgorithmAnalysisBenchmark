@@ -1,73 +1,73 @@
-# Java Performance Benchmark: Estudo de Escalabilidade, Concorrência e Gestão de Memória
+# Java Performance Benchmark: Scalability, Concurrency, and Memory Management Study
 
-Este projeto realiza uma **Análise de Eficiência Algorítmica** e **Complexidade Computacional** no cálculo de fatoriais em larga escala. O foco principal é o **Benchmarking** de diferentes arquiteturas em Java, avaliando o impacto direto no hardware (CPU/RAM) e a otimização de recursos da **JVM (Java Virtual Machine)**.
-
----
-
-## 🛠️ Stack Técnica e Competências Aplicadas
-
-*   **Linguagens:** Java (JDK 17+) e Python (Pandas/Matplotlib para análise de dados).
-*   **Performance & Concorrência:** Java Streams API (Parallel), Multi-threading, Algoritmo de Karatsuba.
-*   **Gestão de Recursos:** Monitoramento de **Heap Memory**, Otimização de **Garbage Collector (GC)** e **Buffered I/O**.
-*   **Fundamentos:** Complexidade Big O, Estruturas de Dados, Imutabilidade de Objetos.
+This project performs an **algorithmic efficiency** and **computational complexity** analysis of large-scale factorial calculations. Its main focus is benchmarking different Java architectures while evaluating their direct impact on hardware resources (CPU/RAM) and optimizing **JVM (Java Virtual Machine)** usage.
 
 ---
 
-## 🎯 Objetivos do Projeto (Métricas de Performance)
+## 🛠️ Technical Stack and Applied Skills
 
-O sistema utiliza três indicadores fundamentais para medir a eficiência do software:
-
-1.  **Δt (Variação de Tempo/Latency):** Mensuração do tempo de execução conforme a carga de processamento aumenta.
-2.  **Δm (Variação de Memória/Throughput):** Monitoramento da alocação de memória na **Heap** e pressão sobre o **Garbage Collector**.
-3.  **Δε (Esforço Computacional):** Análise do custo de processamento em cenários **Single-core vs Multi-core**.
+*   **Languages:** Java (JDK 17+) and Python (Pandas/Matplotlib for data analysis).
+*   **Performance & Concurrency:** Java Streams API (Parallel), multithreading, Karatsuba algorithm.
+*   **Resource Management:** Heap memory monitoring, **Garbage Collector (GC)** optimization, and **Buffered I/O**.
+*   **Core Concepts:** Big O complexity, data structures, and object immutability.
 
 ---
 
-## 🧠 Arquitetura dos Motores de Cálculo (Engenharia de Software)
+## 🎯 Project Goals (Performance Metrics)
 
-O projeto compara 4 estratégias, demonstrando como decisões de design impactam a **escalabilidade** e o consumo de hardware.
+The system uses three fundamental indicators to measure software efficiency:
 
-### 1️⃣ F1 - Hybrid (Single-core / Low Memory)
-*   **Foco:** Otimização para hardware limitado.
-*   **Estratégia:** Uso de tipos primitivos (`long` - 8 bytes) com conversão tardia para `BigInteger`.
-*   **Vantagem:** Evita o *overhead* de paralelismo e minimiza a criação de objetos na memória RAM.
+1.  **Δt (Time Variation / Latency):** Measures execution time as processing load increases.
+2.  **Δm (Memory Variation / Throughput):** Monitors memory allocation in the **heap** and pressure on the **Garbage Collector**.
+3.  **Δε (Computational Effort):** Analyzes processing cost in **single-core vs. multi-core** scenarios.
 
-### 2️⃣ F2 - Stream (Parallel / Multi-core / Karatsuba)
-*   **Foco:** Escalabilidade Vertical e Processamento Paralelo.
-*   **Estratégia:** Utiliza **Parallel Streams** para distribuir a carga entre múltiplos núcleos da CPU.
-*   **Diferencial:** Implementação interna do **Algoritmo de Karatsuba**, otimizando a multiplicação de grandes inteiros.
+---
 
-### 3️⃣ F3 - Linear (Baseline / Ineficiente)
-*   **Foco:** Demonstração de gargalos (*Bottlenecks*).
-*   **Problema:** Alta instabilidade devido à **imutabilidade do BigInteger**.
-*   **Impacto:** Gera milhões de instâncias temporárias, causando travamentos por excesso de trabalho do **Garbage Collector**.
+## 🧠 Calculation Engine Architecture (Software Engineering)
+
+The project compares four strategies, showing how design decisions affect **scalability** and hardware consumption.
+
+### 1️⃣ F1 - Hybrid (Single-Core / Low Memory)
+*   **Focus:** Optimization for constrained hardware.
+*   **Strategy:** Uses primitive types (`long` - 8 bytes) with deferred conversion to `BigInteger`.
+*   **Advantage:** Avoids parallelism overhead and minimizes object creation in RAM.
+
+### 2️⃣ F2 - Stream (Parallel / Multi-Core / Karatsuba)
+*   **Focus:** Vertical scalability and parallel processing.
+*   **Strategy:** Uses **parallel streams** to distribute work across multiple CPU cores.
+*   **Differential:** Includes an internal implementation of the **Karatsuba algorithm**, optimizing large-integer multiplication.
+
+### 3️⃣ F3 - Linear (Baseline / Inefficient)
+*   **Focus:** Bottleneck demonstration.
+*   **Issue:** High instability due to **BigInteger immutability**.
+*   **Impact:** Generates millions of temporary instances, causing slowdowns from excessive **Garbage Collector** activity.
 
 ### 4️⃣ F4 - Ultra Hybrid (Batching + Parallel Tree)
-*   **Foco:** Performance de nível industrial (**State-of-the-art**).
-*   **Estratégia:** Combina processamento em lotes (*batching*) com **Tree Reduction** (redução em árvore).
-*   **Resultado:** A abordagem mais equilibrada, unindo baixo consumo de memória com máximo aproveitamento de núcleos da CPU.
+*   **Focus:** Industrial-grade performance (**state-of-the-art**).
+*   **Strategy:** Combines batching with **tree reduction**.
+*   **Result:** The most balanced approach, combining low memory consumption with maximum CPU core utilization.
 
 ---
 
-## 📊 Resultados e Benchmarks (Amostra: 500.000 iterações)
+## 📊 Results and Benchmarks (Sample: 500,000 iterations)
 
 
-| Métrica | Algoritmo F3 (Linear) | Algoritmo F4 (Ultra Hybrid) |
+| Metric | Algorithm F3 (Linear) | Algorithm F4 (Ultra Hybrid) |
 | :--- | :--- | :--- |
-| **Tempo de Resposta (Δt)** | ~70.107 ms | **~1.129 ms (60x mais rápido)** |
-| **Estabilidade de Memória** | Crítica (GC Spikes) | Estável e Otimizada |
-| **Eficiência de Escala** | Exponencial (Ineficiente) | Linear / Estável |
+| **Response Time (Δt)** | ~70,107 ms | **~1,129 ms (60x faster)** |
+| **Memory Stability** | Critical (GC spikes) | Stable and optimized |
+| **Scalability Efficiency** | Exponential (inefficient) | Linear / stable |
 
 ---
 
-## 🚀 Como Executar e Requisitos
+## 🚀 How to Run and Requirements
 
-### Pré-requisitos
-*   **Java Development Kit (JDK) 11 ou superior.**
-*   **Ambiente:** Mínimo 2GB de RAM livre para testes de alta carga (especialmente para o motor F3).
+### Prerequisites
+*   **Java Development Kit (JDK) 11 or newer.**
+*   **Environment:** At least 2 GB of free RAM for high-load tests (especially for engine F3).
 
-### Instalação e Execução
-1. Compile os módulos:
+### Installation and Execution
+1. Compile the modules:
    ```bash
    javac Main.java
    FactorialMaster.java
