@@ -1,69 +1,63 @@
-# Análise de Complexidade Computacional – Fatorial e Fibonacci em C# e Java
+# Computational Complexity Analysis – Factorial and Fibonacci in C# and Java
 
-## Desenvolvido por:
-    Luiz Santana de Araujo
-    Welber Willian da Silva
-    
-## Descrição do Projeto
+## Developed by:
+- Luiz Santana de Araujo
+- Welber Willian da Silva
 
-Este projeto implementa algoritmos para cálculo de **fatorial** e da **sequência de Fibonacci** em C#, com o objetivo de analisar aspectos básicos de **complexidade computacional**.
+## Project Description
 
-Durante a execução dos algoritmos são coletadas métricas de desempenho considerando três variáveis principais:
+This project implements algorithms to calculate **Factorials** and the **Fibonacci sequence** in C#, aiming to analyze fundamental aspects of **computational complexity**.
 
-- **Δe (Delta de entrada)** – tamanho da entrada do algoritmo  
-- **Δt (Delta de tempo)** – tempo de execução  
-- **Δm (Delta de memória)** – consumo de memória durante a execução  
+During execution, performance metrics are collected based on three primary variables:
 
-O programa executa os algoritmos para diferentes valores de entrada, permitindo observar como o tempo de processamento e o uso de memória variam conforme o aumento da complexidade do problema.
+- **Δe (Input Delta)** – The size of the algorithm's input.
+- **Δt (Time Delta)** – Total execution time.
+- **Δm (Memory Delta)** – Memory consumption during execution.
 
----
-
-## Objetivos
-
-- Implementar um algoritmo para cálculo de **fatorial**
-- Implementar um algoritmo para cálculo da **sequência de Fibonacci**
-- Executar os algoritmos com **valores de entrada progressivamente maiores**
-- Medir **tempo de execução**
-- Medir **consumo de memória**
-- Relacionar os resultados com conceitos básicos de **complexidade computacional**
+The program runs these algorithms with various input values, allowing for the observation of how processing time and memory usage scale as the problem's complexity increases.
 
 ---
 
-## Variáveis de Análise
+## Objectives
 
-### Δe – Delta de Entrada
-
-Representa o tamanho da entrada utilizada no algoritmo.
-
-Exemplos de entradas utilizadas no programa:
-
-5, 10, 20, 50, 100, 200, 500
-
-
-O aumento de Δe permite observar como o algoritmo se comporta conforme o problema cresce.
+- Implement an algorithm for **Factorial** calculation.
+- Implement an algorithm for the **Fibonacci sequence**.
+- Execute algorithms with **progressively larger input values**.
+- Measure **execution time**.
+- Measure **memory consumption**.
+- Correlate results with core **computational complexity** concepts.
 
 ---
 
-### Δt – Delta de Tempo
+## Analysis Variables
 
-Representa o tempo necessário para executar o algoritmo.
+### Δe – Input Delta
 
-A medição é realizada utilizando a classe:
+Represents the size of the input used in the algorithm.
 
-**System.Diagnostics.Stopwatch**
+Examples of inputs used in the program:
+`5, 10, 20, 50, 100, 200, 500`
 
-
-O tempo é exibido em milissegundos.
+Increasing Δe reveals how the algorithm behaves as the problem scales.
 
 ---
 
-### Δm – Delta de Memória
+### Δt – Time Delta
 
-Representa a diferença de memória utilizada antes e depois da execução do algoritmo.
+Represents the time required to execute the algorithm.
 
-A medição é feita utilizando:
+Measurements are performed using the following class:
+**`System.Diagnostics.Stopwatch`**
 
-**GC.GetTotalMemory()**
+Time is displayed in milliseconds.
 
+---
 
-O valor exibido corresponde ao aumento de memória utilizado durante a execução.
+### Δm – Memory Delta
+
+Represents the difference in memory usage before and after the algorithm's execution.
+
+Measurements are performed using:
+**`GC.GetTotalMemory()`**
+
+The displayed value corresponds to the memory increase observed during execution.
